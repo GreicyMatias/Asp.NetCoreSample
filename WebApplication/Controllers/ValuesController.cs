@@ -8,7 +8,7 @@ namespace WebApplication.Controllers
     public class ValuesController : ControllerBase
     {
         /// <summary>
-        /// Retornar a URL de onde encontra-se o fonte no github.
+        /// Retornar a URL de onde encontra-se o código fonte, no github.
         /// </summary>
         /// <returns>URL contendo o repositório do Github com o código.</returns>
         [HttpGet("showmethecode")]
