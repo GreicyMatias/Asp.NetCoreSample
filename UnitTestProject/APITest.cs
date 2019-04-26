@@ -16,7 +16,7 @@ namespace UnitTestProject
             ValuesController controller = new ValuesController();
 
             //Act
-            var result = controller.Get();
+            var result = controller.GetUrl();
 
             //Assert
             result.Value.Should().StartWith("https://github.com/");

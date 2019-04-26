@@ -12,7 +12,7 @@ namespace WebApplication.Controllers
         /// </summary>
         /// <returns>URL contendo o repositório do Github com o código.</returns>
         [HttpGet("showmethecode")]
-        public ActionResult<string> Get()
+        public ActionResult<string> GetUrl()
         {
             return "https://github.com/GreicyMatias/Asp.NetCoreSample";
         }
