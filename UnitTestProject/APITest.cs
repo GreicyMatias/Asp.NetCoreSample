@@ -26,7 +26,7 @@ namespace UnitTestProject
         [DataRow(100, 5, "105,10")]
         [DataRow(100, 3, "103,03")]
         [DataRow(0, 3, "0,00")]
-        public void Deveria_calcular_juros(int initialValue, int months, string expectedValue)
+        public void Deveria_calcular_juros(double initialValue, int months, string expectedValue)
         {
             //Arrange
             ValuesController controller = new ValuesController();

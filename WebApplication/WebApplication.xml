@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication</name>
+    </assembly>
+    <members>
+        <member name="M:WebApplication.Controllers.ValuesController.Get">
+            <summary>
+            Retornar a URL de onde encontra-se o fonte no github.
+            </summary>
+            <returns>URL contendo o repositório do Github com o código.</returns>
+        </member>
+        <member name="M:WebApplication.Controllers.ValuesController.Get(System.Double,System.Int32)">
+            <summary>
+              Faz um cálculo de juros compostos
+            </summary>
+            <param name="valorinicial">Valor inicial em decimal</param>
+            <param name="meses">Valor inteiro, represetando tempo em meses</param>
+            <returns>Resultado do calculo</returns>
+        </member>
+    </members>
+</doc>

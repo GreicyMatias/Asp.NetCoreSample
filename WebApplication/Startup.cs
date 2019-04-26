@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,20 +37,18 @@ namespace WebApplication
                 {
                     Version = "v1",
                     Title = "Asp.NetCoreSample API",
-                    Description = "A simple example ASP.NET Core Web API",
-                    TermsOfService = "None",
+                    Description = "Exemplo Web Api ASP.NET Core",
                     Contact = new Contact
                     {
-                        Name = "Shayne Boyer",
-                        Email = string.Empty,
-                        Url = "https://twitter.com/spboyer"
-                    },
-                    License = new License
-                    {
-                        Name = "Use under LICX",
-                        Url = "https://example.com/license"
+                        Name = "Greicy de Mattia",
+                        Email = "greicy_matias@hotmail.com",
+                        Url = "https://github.com/GreicyMatias/Asp.NetCoreSample"
                     }
                 });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
 
             });
 
